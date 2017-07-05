@@ -1,7 +1,5 @@
 # Source 2 Image Example
 
-os-sample-java-web
-
 Sample Java Web Application for use in OpenShift
 
 
@@ -19,7 +17,9 @@ Sample Java Web Application for use in OpenShift
 ```
 #### 2 - expose the service
 `$ oc expose svc myapp`
-```route "myapp" exposed```
+```
+route "myapp" exposed
+```
 
 #### 3 - get information about the deployment
 `$ oc status`
