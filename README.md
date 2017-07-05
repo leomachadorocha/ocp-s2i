@@ -1,11 +1,12 @@
 # Source 2 Image Example
 
 os-sample-java-web
+
 Sample Java Web Application for use in OpenShift
 
 
 ### 1 - create the new Java web application
-**$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git**
+`$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git`
 --> Creating resources with label app=myapp ...
     imagestream "myapp" created
     buildconfig "myapp" created
@@ -20,12 +21,13 @@ Sample Java Web Application for use in OpenShift
 route "myapp" exposed
 
 ### 3 - get information about the deployment
-**$ oc status**
+`$ oc status`
 
 ### 4 - make changes to the src/main/webapp/index.jsp file
 
 ### 5 - start a new build
-**$ oc start-build myapp**
+
+`$ oc start-build myapp`
 
 ### 6 - see the changes applied
 
