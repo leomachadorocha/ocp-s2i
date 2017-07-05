@@ -16,7 +16,7 @@ Sample Java Web Application for use in OpenShift
     Run 'oc status' to view your app.
 
 ### 2 - expose the service
-**$ oc expose svc myapp**
+`$ oc expose svc myapp`
 route "myapp" exposed
 
 ### 3 - get information about the deployment
