@@ -5,7 +5,6 @@ Sample Java Web Application for use in OpenShift
 
 
 1 - create the new Java web application
-
 $ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git
 --> Creating resources with label app=myapp ...
     imagestream "myapp" created
