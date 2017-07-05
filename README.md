@@ -19,7 +19,7 @@ Sample Java Web Application for use in OpenShift
 ```
 #### 2 - expose the service
 `$ oc expose svc myapp`
-route "myapp" exposed
+```route "myapp" exposed```
 
 #### 3 - get information about the deployment
 `$ oc status`
@@ -31,7 +31,5 @@ route "myapp" exposed
 `$ oc start-build myapp`
 
 #### 6 - see the changes applied
-
-
 
 fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-application-platform/
