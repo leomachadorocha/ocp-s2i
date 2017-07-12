@@ -3,7 +3,9 @@
 Sample Java Web Application for use in OpenShift
 
 #### 1 - create new project
-`oc new-project demo-s2i --display-name="Demonstração Básica do S2I" --description="Demonstração básica do build strategy S2I, usando o EAP 7"`
+`oc new-project demo-s2i \
+--display-name="Demonstração Básica do S2I" \
+--description="Demonstração básica do build strategy S2I, usando o EAP 7"`
 
 #### 1 - create the new Java web application
 `$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git`
@@ -29,7 +31,6 @@ route "myapp" exposed
 #### 4 - make changes to the src/main/webapp/index.jsp file
 
 #### 5 - start a new build
-
 `$ oc start-build myapp`
 
 #### 6 - see the changes applied
