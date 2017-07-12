@@ -3,12 +3,16 @@
 Sample Java Web Application for use in OpenShift
 
 #### 1 - create new project
-```oc new-project demo-s2i \
+```
+oc new-project demo-s2i \
 --display-name="Demonstração Básica do S2I" \
---description="Demonstração básica do build strategy S2I, usando o EAP 7"```
+--description="Demonstração básica do build strategy S2I, usando o EAP 7"
+```
 
 #### 2 - create the new Java web application
-```$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git```
+```
+$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git
+```
 ```
 --> Creating resources with label app=myapp ...
     imagestream "myapp" created
@@ -21,24 +25,28 @@ Sample Java Web Application for use in OpenShift
 ```
 
 #### 3 - expose the service
-```$ oc expose svc myapp```
+```
+$ oc expose svc myapp
+```
 ```
 route "myapp" exposed
 ```
 
 #### 4 - get information about the deployment
-```$ oc status```
+```
+$ oc status
+```
 
 #### 5 - make changes to the src/main/webapp/index.jsp file
 
 #### 6 - start a new build
-```$ oc start-build myapp```
+```
+$ oc start-build myapp
+```
 
 #### 7 - see the changes applied
 
 fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-application-platform/
-
-
 
 # Adding Webhook
 
