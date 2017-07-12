@@ -44,4 +44,4 @@ fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-applicat
 
 # Adding Webhook
 
-Sample Java Web Application for use in OpenShift
+no Git Hub, em https://github.com/leomachadorocha/book-helloworld/settings/hooks/11602813, atualizar APENAS o campo "Payload URL" com o valor do campo "GitHub webhook URL:" obtido na página de configurações da Build.
