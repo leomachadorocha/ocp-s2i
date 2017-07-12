@@ -10,7 +10,7 @@ oc new-project demo-s2i \
 ```
 
 #### 2 - create the new Java web application
-`$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git`
+```$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/os-sample-java-web.git```
 ```
 --> Creating resources with label app=myapp ...
     imagestream "myapp" created
@@ -23,18 +23,18 @@ oc new-project demo-s2i \
 ```
 
 #### 3 - expose the service
-`$ oc expose svc myapp`
+```$ oc expose svc myapp```
 ```
 route "myapp" exposed
 ```
 
 #### 4 - get information about the deployment
-`$ oc status`
+```$ oc status```
 
 #### 5 - make changes to the src/main/webapp/index.jsp file
 
 #### 6 - start a new build
-`$ oc start-build myapp`
+```$ oc start-build myapp```
 
 #### 7 - see the changes applied
 
@@ -44,4 +44,4 @@ fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-applicat
 
 # Adding Webhook
 
-No Git Hub, em https://github.com/leomachadorocha/os-sample-java-web/settings/hooks, atualizar APENAS o campo "Payload URL" com o valor do campo "GitHub webhook URL:" obtido na página de configurações da Build do OpenShift.
+No Git Hub, em https://github.com/<your_user>/os-sample-java-web/settings/hooks, atualizar APENAS o campo "Payload URL" com o valor do campo "GitHub webhook URL:" obtido na página de configurações da Build do OpenShift.
