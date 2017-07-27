@@ -73,6 +73,6 @@ fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-applicat
 
 No Git Hub, em https://github.com/leomachadorocha/ocp-s2i-lab/settings/hooks:
 - informar o campo "Payload URL" com o valor do campo "GitHub Webhook URL:" obtido na página de configurações da Build.
-- alterar o campo "Content type" para "application/json"
-- desabilitar a SSL verification
+- alterar o campo "Content type" para "application/json".
+- desabilitar a SSL verification.
 
