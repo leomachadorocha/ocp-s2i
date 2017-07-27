@@ -11,9 +11,24 @@ oc new-project demo-s2i \
 
 #### 2 - create the new Java web application
 ```
-$ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/ocp-s2i-lab.git
+$ oc new-app --name=myapp jboss-eap70-openshift~https://github.com/leomachadorocha/ocp-s2i-lab.git
 ```
 ```
+--> Found image 6257411 (2 months old) in image stream "openshift/jboss-eap70-openshift" under tag "latest" for "jboss-eap70-openshift"
+
+    JBoss EAP 7.0 
+    ------------- 
+    Platform for building and running JavaEE applications on JBoss EAP 7.0
+
+    Tags: builder, javaee, eap, eap7
+
+    * A source build using source code from https://github.com/leomachadorocha/ocp-s2i-lab.git will be created
+      * The resulting image will be pushed to image stream "myapp:latest"
+      * Use 'start-build' to trigger a new build
+    * This image will be deployed in deployment config "myapp"
+    * Ports 8080/tcp, 8443/tcp, 8778/tcp will be load balanced by service "myapp"
+      * Other containers can access this service through the hostname "myapp"
+
 --> Creating resources with label app=myapp ...
     imagestream "myapp" created
     buildconfig "myapp" created
