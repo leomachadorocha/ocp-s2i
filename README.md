@@ -12,9 +12,6 @@ oc new-project demo-s2i \
 #### 2 - create the new Java web application
 ```
 $ oc new-app --name=myapp jboss-eap64-openshift~https://github.com/leomachadorocha/ocp-s2i-lab.git
-
-[todo - testar com a imagem do EAP 7]
- $ oc new-app --name=myapp jboss-eap-7/eap70-openshift~https://github.com/leomachadorocha/ocp-s2i-lab.git 
 ```
 ```
 --> Creating resources with label app=myapp ...
