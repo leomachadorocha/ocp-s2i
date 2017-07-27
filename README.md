@@ -54,12 +54,18 @@ $ oc status
 
 #### 5 - make changes to the src/main/webapp/index.jsp file
 
+
 #### 6 - start a new build
 ```
 $ oc start-build myapp
 ```
 
-#### 7 - see the changes applied
+#### 7 - see the logs
+```
+$ oc logs -f bc/myapp
+```
+
+#### 8 - see the changes applied
 
 fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-application-platform/
 
