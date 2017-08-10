@@ -11,7 +11,7 @@ oc new-project demo-s2i \
 
 #### 2. create the new Java web application
 ```
-$ oc new-app --name=myapp jboss-eap70-openshift~https://github.com/leomachadorocha/ocp-s2i-lab.git
+$ oc new-app --name=myapp jboss-eap70-openshift~https://github.com/leomachadorocha/ocp-s2i.git
 ```
 ```
 --> Found image 6257411 (2 months old) in image stream "openshift/jboss-eap70-openshift" under tag "latest" for "jboss-eap70-openshift"
@@ -22,7 +22,7 @@ $ oc new-app --name=myapp jboss-eap70-openshift~https://github.com/leomachadoroc
 
     Tags: builder, javaee, eap, eap7
 
-    * A source build using source code from https://github.com/leomachadorocha/ocp-s2i-lab.git will be created
+    * A source build using source code from https://github.com/leomachadorocha/ocp-s2i.git will be created
       * The resulting image will be pushed to image stream "myapp:latest"
       * Use 'start-build' to trigger a new build
     * This image will be deployed in deployment config "myapp"
@@ -71,7 +71,7 @@ fonte: https://blog.openshift.com/getting-started-with-jboss-enterprise-applicat
 
 # Adding Webhook
 
-No Git Hub, em https://github.com/leomachadorocha/ocp-s2i-lab/settings/hooks:
+No Git Hub, em https://github.com/leomachadorocha/ocp-s2i/settings/hooks:
 - informar o campo "Payload URL" com o valor do campo "GitHub Webhook URL:" obtido na página de configurações da Build.
 - alterar o campo "Content type" para "application/json".
 - desabilitar a SSL verification.
